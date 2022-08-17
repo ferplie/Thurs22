@@ -30,11 +30,11 @@ const fetch = require("node-fetch");
 const API_ENDPOINT = "https://creator.zoho.com/api/v2/zoho_henks/bainsvleicpf/report/All_Sectors/2573309000006717012";
 
 exports.handler = async (event, context) => {
-  return fetch(API_ENDPOINT, { headers: { Accept: "application/json", Authorization: "Bearer 1000.d285d6260b770cda9dddb6b1ff22e330.27e555af37fff8e8aaec0d2e7b7bc989"} })
+  return fetch(API_ENDPOINT, { headers: { Authorization: "Bearer 1000.c74adee98bb4dd74488ae7c590fa3675.d9eb840fce5d706552c5936062bf0ee6"} })
     .then((response) => response.json())
     .then((data) => ({
       statusCode: 200,
-      body: data,
-    }))
+      body: JSON.stringify(data),
+        }))
     .catch((error) => ({ statusCode: 422, body: String(error) }));
 };

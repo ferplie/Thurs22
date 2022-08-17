@@ -36,11 +36,8 @@ function getOcto(ev) {
   fetch('/api/octo')
     .then((res) => res.json())
     .then((data) => {
-      let main = document.querySelector('main');
-      let content = data.map((item) => {
-        return `<li>${item.name}</li>`;
-      });
-      main.innerHTML = `<ul>${content}</ul>`;
+
+      console.log(data);
     })
     .catch(console.error);
 }

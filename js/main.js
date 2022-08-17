@@ -34,7 +34,6 @@ function getOcto(ev) {
   ev.preventDefault();
   console.log('get octocat');
   fetch('/api/octo')
-    .then((res) => res.json())
     .then((data) => {
 
       console.log(data);

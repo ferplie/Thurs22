@@ -36,7 +36,7 @@ function getOcto(ev) {
   fetch('/api/octo')
     .then((data) => {
 
-      console.log(data);
+      console.log("data received ---",data);
     })
     .catch(console.error);
 }

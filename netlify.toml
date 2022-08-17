@@ -21,3 +21,6 @@
   from = "/api/octo"
   to = "/.netlify/functions/octo"
   status = 200
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"

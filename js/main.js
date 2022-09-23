@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('octo').addEventListener('click', getOcto);
   document.getElementById('getRecBtn').addEventListener('click', getRec);
+  const output=document.getElementById('Output');
 
   async function getOcto(ev) {
   ev.preventDefault();
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const url="/api/octo"
   const myData =await fetch(url)
   const received = await myData.json();
+  output.innerHTML=received;
 
   console.log(received);
 

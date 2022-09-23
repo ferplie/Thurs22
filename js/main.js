@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  async function getRec(ev) {
   ev.preventDefault();
-  console.log('Getting Data From Zoho');
-  // const url="/api/octo"
+  console.log('Getting Data From Zoho Creator');
   const url="/api/octo"
   const myData =await fetch(url)
   const received = await myData.json();

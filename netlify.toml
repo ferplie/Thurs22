@@ -22,5 +22,17 @@
   to = "/.netlify/functions/octo"
   status = 200
 
+[[redirects]]
+  from = "/api/saveToken"
+  to = "/.netlify/functions/saveToken"
+  status = 200
+
+
+
+  [[redirects]]
+  from = "/api/generateAccessToken"
+  to = "/.netlify/functions/generateAccessToken"
+  status = 200
+
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
